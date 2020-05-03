@@ -2,6 +2,11 @@ PHP COLLECTION
 ==============
 This component provides emulation of collection type for work with php
 
+### INSTALLATION:
+```bash
+composer require darkdevlab/collection
+```
+
 USAGE
 =====
 #### Collection
