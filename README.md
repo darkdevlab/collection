@@ -32,15 +32,9 @@ class User
  */
 class UserCollection extends Collection
 {
-    public function add($user)
+    public function addItem(User $user): self
     {
-        if (!($user instanceof User)) {
-            throw new \InvalidArgumentException('unsupported type of collection item');
-        }
-
-        parent::add($user);
-
-        return $this;
+        return parent::add($user);
     }
 }
 
