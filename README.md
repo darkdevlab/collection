@@ -40,9 +40,9 @@ class UserCollection extends Collection
 
 $collection = new UserCollection();
 
-$collection->add(new User('John'));
-$collection->add(new User('John')); // Only one added. Duplication will be skipped
-$collection->add(new User('Mark'));
+$collection->addItem(new User('John'));
+$collection->addItem(new User('John')); // Only one added. Duplication will be skipped
+$collection->addItem(new User('Mark'));
 
 foreach ($collection as $user) {
     echo sprintf('Username: %s', $user->getName()), PHP_EOL;
